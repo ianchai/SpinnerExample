@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SpinnerExample</string>
+
+    <string-array name="carsArray2">
+        <item>Honda City</item>
+        <item>Proton Iswara</item>
+        <item>Perodua Kancil</item>
+        <item>Hyundai Matrix</item>
+        <item>Subaru Legacy</item>
+        <item>Ford Prefect</item>
+    </string-array>
 </resources>

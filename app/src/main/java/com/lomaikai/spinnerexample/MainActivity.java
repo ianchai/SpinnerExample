@@ -22,26 +22,26 @@ public class MainActivity extends AppCompatActivity {
 
         carSpinner = findViewById(R.id.carSpinner);
 
-        ArrayList<String> carArrayList = new ArrayList<>();
-        carArrayList.add("Hyundai");
-        carArrayList.add("Toyota");
-        carArrayList.add("Ford");
-        carArrayList.add("Proton");
-        carArrayList.add("Perodua");
-        carArrayList.add("BMW");
-
-        ArrayAdapter<String> carAdapter = new ArrayAdapter(
-                this,
-                android.R.layout.simple_spinner_dropdown_item,
-                carArrayList
-        );
-
-        carSpinner.setAdapter(carAdapter);
+//        ArrayList<String> carArrayList = new ArrayList<>();
+//        carArrayList.add("Hyundai");
+//        carArrayList.add("Toyota");
+//        carArrayList.add("Ford");
+//        carArrayList.add("Proton");
+//        carArrayList.add("Perodua");
+//        carArrayList.add("BMW");
+//
+//        ArrayAdapter<String> carAdapter = new ArrayAdapter(
+//                this,
+//                android.R.layout.simple_spinner_dropdown_item,
+//                carArrayList
+//        );
+//
+//        carSpinner.setAdapter(carAdapter);
 
         carSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, carArrayList.get(i)+" selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, carSpinner.getSelectedItem().toString()+" selected", Toast.LENGTH_SHORT).show();
             }
 
             @Override
